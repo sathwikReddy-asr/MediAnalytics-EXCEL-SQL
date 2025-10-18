@@ -1,4 +1,4 @@
-**🏥 MediAnalytics — Healthcare Data Analysis (Excel + SQL)**
+**🏥 MediAnalytics — Healthcare Appointment Analysis (Excel + SQL)**
 **📘 Project Overview**
 
 MediAnalytics is a comprehensive healthcare data analysis project that explores hospital appointment patterns, patient demographics, and no-show behavior.
