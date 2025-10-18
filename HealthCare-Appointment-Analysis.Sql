@@ -1,3 +1,7 @@
+--Platform used: My Sql Workbench
+--Dataset: Health Dataset
+--Source: Kaggle
+
 # 1-Retrieve all records from the dataset ?
 select * from healthh;
 
