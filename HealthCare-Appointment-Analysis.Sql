@@ -3,10 +3,12 @@
 --Source: Kaggle
 
 # 1-Retrieve all records from the dataset ?
-select * from healthh;
+select * 
+from healthh;
 
 # 2-Display distinct values from the Gender column ?
-select distinct(Gender) from healthh;
+select distinct(Gender) 
+from healthh;
 
 # 3-Count the total number of appointments ?
 select count(Appointment_Id) as total_count from healthh;
