@@ -24,19 +24,26 @@ from healthh
 where Scholarship = 1;
 
 # 6-Count how many patients have diabetes ?
-select count(*) as total_count from healthh where Diabetes = 1;
+select count(*) as total_count 
+from healthh where Diabetes = 1;
 
 # 7-Find the average age of patients ?
-select avg(age) as average_age from healthh;
+select avg(age) as average_age 
+from healthh;
 
 # 8-Display the youngest and oldest patient ages ?
-select min(age) as youngest, max(age) as oldest from healthh;
+select min(age) as youngest, max(age) as oldest 
+from healthh;
 
 # 9-Retrieve all patients whose age is above 60 ?
-select * from healthh where age > 60;
+select * 
+from healthh 
+where age > 60;
 
 # 10-Show how many patients received SMS reminders ?
-select * from healthh where SMS_received = 1;
+select * 
+from healthh 
+where SMS_received = 1;
 
 # 11-List all appointments where No_show = 'Yes' ?
 select * from healthh where No_show = 'Yes';
