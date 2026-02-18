@@ -46,19 +46,29 @@ from healthh
 where SMS_received = 1;
 
 # 11-List all appointments where No_show = 'Yes' ?
-select * from healthh where No_show = 'Yes';
+select * 
+from healthh 
+where No_show = 'Yes';
 
 # 12-Count total appointments by gender ?
-select Gender,count(*) as total_count from healthh group by 1;
+select Gender,count(*) as total_count 
+from healthh 
+group by 1;
 
 # 13-Count total appointments per year ?
-select Appointment_year,count(*) as total_appointments from healthh group by 1;
+select Appointment_year,count(*) as total_appointments 
+from healthh 
+group by 1;
 
 # 14-Find how many appointments were scheduled in each quarter ?
-select Scheduled_Quarter,count(*) as scheduled_by_quarter from healthh group by 1;
+select Scheduled_Quarter,count(*) as scheduled_by_quarter 
+from healthh 
+group by 1;
 
 # 15-Get the count of appointments made in each month (Appointment_month_name) ?
-select Appointment_month_name,count(*) as appointments_by_months from healthh group by 1;
+select Appointment_month_name,count(*) as appointments_by_months 
+from healthh 
+group by 1;
 
 # 16-Find the number of missed appointments (No_show = 'Yes') by gender ?
 select Gender,count(*) as total_count from healthh where No_show = 'Yes' group by 1;
