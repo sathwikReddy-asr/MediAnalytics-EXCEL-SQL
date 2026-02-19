@@ -71,19 +71,29 @@ from healthh
 group by 1;
 
 # 16-Find the number of missed appointments (No_show = 'Yes') by gender ?
-select Gender,count(*) as total_count from healthh where No_show = 'Yes' group by 1;
+select Gender,count(*) as total_count 
+from healthh 
+where No_show = 'Yes' 
+group by 1;
 
 # 17-Calculate the percentage of patients who missed their appointments ?
-select sum((case when No_show = 'Yes' then 1 end)*100)/count(*) as percentage  from healthh;
+select sum((case when No_show = 'Yes' then 1 end)*100)/count(*) as percentage  
+from healthh;
 
 # 18-Count the number of appointments by day of the week ?
-select Appointment_dayname,count(*) as total_appointments from healthh group by 1;
+select Appointment_dayname,count(*) as total_appointments 
+from healthh group by 1;
 
 # 19-Show the average age of patients who missed their appointment vs those who didn’t ?
-select No_show,avg(age) as missed from healthh group by 1;
+select No_show,avg(age) as missed 
+from healthh group by 1;
 
 # 20-Find which month had the highest number of missed appointments ?
-select Appointment_month_name,count(*) as total_missed from healthh where No_show = 'Yes' group by 1 order by total_missed desc limit 1;
+select Appointment_month_name,count(*) as total_missed 
+from healthh where No_show = 'Yes' 
+group by 1 
+order by total_missed desc 
+limit 1;
 
 # 21-Find the most common appointment day of the week ?
 select Appointment_dayname,count(*) as most_common_day from healthh group by 1 order by most_common_day desc limit 1;
