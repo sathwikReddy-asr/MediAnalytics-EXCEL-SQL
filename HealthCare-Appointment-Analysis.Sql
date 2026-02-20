@@ -96,19 +96,31 @@ order by total_missed desc
 limit 1;
 
 # 21-Find the most common appointment day of the week ?
-select Appointment_dayname,count(*) as most_common_day from healthh group by 1 order by most_common_day desc limit 1;
+select Appointment_dayname,count(*) as most_common_day 
+from healthh 
+group by 1 
+order by most_common_day desc 
+limit 1;
 
 # 22-Determine how many patients suffer from both Diabetes and Hypertension ?
-select * from healthh where Diabetes = 1 and Hipertension = 1; 
+select * 
+from healthh 
+where Diabetes = 1 and Hipertension = 1; 
 
 # 23-Count how many patients have both Alcoholism and Handcap ?
-select count(*) as total_count from healthh where Alcoholism = 1 and Handcap = 1;
+select count(*) as total_count 
+from healthh 
+where Alcoholism = 1 and Handcap = 1;
 
 # 24-Find the total number of patients who are both diabetic and did not show up ?
-select count(*) as total_count from healthh where Diabetes = 1 and No_show ='Yes';
+select count(*) as total_count 
+from healthh 
+where Diabetes = 1 and No_show ='Yes';
 
 # 25-Calculate the average scheduled–appointment day difference for missed vs attended appointments ?
-select No_show,avg(Sche_Appo_daydiff) as average_day_difference from healthh group by 1;
+select No_show,avg(Sche_Appo_daydiff) as average_day_difference 
+from healthh 
+group by 1;
 
 # 26-Get the number of appointments per quarter ?
 select Appointment_Quarter,count(*) as appointment_by_quarter from healthh group by 1;
