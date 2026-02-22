@@ -123,10 +123,16 @@ from healthh
 group by 1;
 
 # 26-Get the number of appointments per quarter ?
-select Appointment_Quarter,count(*) as appointment_by_quarter from healthh group by 1;
+select Appointment_Quarter,count(*) as appointment_by_quarter 
+from healthh 
+group by 1;
 
 # 27-Identify the year with the highest number of total appointments ?
-select Appointment_year,count(*) as total_appointments from healthh group by 1 order by total_appointments desc limit 1;
+select Appointment_year,count(*) as total_appointments 
+from healthh 
+group by 1 
+order by total_appointments desc 
+limit 1;
 
 # 28-Find the average number of SMS reminders received per year ?
 select Scheduled_year,round(avg(SMS_received),2) as average from healthh group by 1;
