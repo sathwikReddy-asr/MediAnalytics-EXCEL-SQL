@@ -135,10 +135,15 @@ order by total_appointments desc
 limit 1;
 
 # 28-Find the average number of SMS reminders received per year ?
-select Scheduled_year,round(avg(SMS_received),2) as average from healthh group by 1;
+select Scheduled_year,round(avg(SMS_received),2) as average 
+from healthh
+group by 1;
 
 # 29-Show total appointments where Scholarship = 1 grouped by gender ?
-select Gender,count(*) as total_count from healthh where Scholarship = 1 group by 1;
+select Gender,count(*) as total_count 
+from healthh 
+where Scholarship = 1 
+group by 1;
 
 # 30-Count how many appointments were scheduled during weekends ?
 select Scheduled_dayname,count(*) as total_appointments from healthh where Scheduled_dayname in ('Saturday','Sunday') group by 1;
