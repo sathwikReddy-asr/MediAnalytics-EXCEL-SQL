@@ -146,10 +146,16 @@ where Scholarship = 1
 group by 1;
 
 # 30-Count how many appointments were scheduled during weekends ?
-select Scheduled_dayname,count(*) as total_appointments from healthh where Scheduled_dayname in ('Saturday','Sunday') group by 1;
+select Scheduled_dayname,count(*) as total_appointments 
+from healthh 
+where Scheduled_dayname in ('Saturday','Sunday') 
+group by 1;
 
 # 31-Rank months based on the number of missed appointments ?
-select Appointment_month_name,count(*) as missed,rank() over(order by count(*) desc) as rank_number from healthh where No_show = 'Yes' group by 1;
+select Appointment_month_name,count(*) as missed,rank() over(order by count(*) desc) as rank_number 
+from healthh 
+where No_show = 'Yes' 
+group by 1;
 
 # 32-Find which gender has a higher no-show rate overall ?
 select gender,count(*) as rate from healthh where No_show = 'No' group by 1 order by rate desc limit 1;
