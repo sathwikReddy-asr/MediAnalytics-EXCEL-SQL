@@ -158,10 +158,17 @@ where No_show = 'Yes'
 group by 1;
 
 # 32-Find which gender has a higher no-show rate overall ?
-select gender,count(*) as rate from healthh where No_show = 'No' group by 1 order by rate desc limit 1;
+select gender,count(*) as rate 
+from healthh 
+where No_show = 'No' 
+group by 1
+order by rate desc 
+limit 1;
 
 # 33-For each age category, calculate no-show percentage ?
-select Age_Category,round((sum(case when No_show ='Yes' then 1 else 0 end)*100)/count(*),1) as no_show_percentage from healthh group by 1;
+select Age_Category,round((sum(case when No_show ='Yes' then 1 else 0 end)*100)/count(*),1) as no_show_percentage 
+from healthh 
+group by 1;
 
 # 34-Determine whether older patients (Age > 50) miss appointments more often than younger ones ?
 select Age_Category,count(*) as total_count from healthh where No_show = 'Yes' and Age_Category in ('Old','Young') group by 1;
