@@ -171,10 +171,17 @@ from healthh
 group by 1;
 
 # 34-Determine whether older patients (Age > 50) miss appointments more often than younger ones ?
-select Age_Category,count(*) as total_count from healthh where No_show = 'Yes' and Age_Category in ('Old','Young') group by 1;
+select Age_Category,count(*) as total_count 
+from healthh 
+where No_show = 'Yes' and Age_Category in ('Old','Young') 
+group by 1;
 
 # 35-Find the top 3 months with the highest average Sche_Appo_daydiff ?
-select Scheduled_month_name,round(avg(Sche_Appo_daydiff),1) as average_difference from healthh group by 1 order by average_difference desc limit 3;
+select Scheduled_month_name,round(avg(Sche_Appo_daydiff),1) as average_difference 
+from healthh 
+group by 1 
+order by average_difference desc 
+limit 3;
 
 # 36-Find how many patients have multiple appointments (count per Patient_ID) ?
 select Patient_Id,count(*) as total from healthh group by 1 having count(*) > 1;
