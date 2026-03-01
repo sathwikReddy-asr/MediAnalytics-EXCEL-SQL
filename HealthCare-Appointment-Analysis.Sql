@@ -184,13 +184,20 @@ order by average_difference desc
 limit 3;
 
 # 36-Find how many patients have multiple appointments (count per Patient_ID) ?
-select Patient_Id,count(*) as total from healthh group by 1 having count(*) > 1;
+select Patient_Id,count(*) as total 
+from healthh 
+group by 1 
+having count(*) > 1;
 
 # 37-Identify patients who missed all their scheduled appointments ?
-select * from healthh where No_show = 'Yes';
+select * 
+from healthh 
+where No_show = 'Yes';
 
 # 38-Find the correlation between SMS_received and No_show (hint: use counts or ratios) ?
-select SMS_received,round((sum(case when No_show = 'Yes' then 1 else 0 end)*100)/count(*),1) as corr from healthh group by 1;
+select SMS_received,round((sum(case when No_show = 'Yes' then 1 else 0 end)*100)/count(*),1) as corr 
+from healthh 
+group by 1;
 
 # 39-Find the most common appointment day for diabetic patients ?
 select Appointment_dayname,count(*) as total from healthh where Diabetes = 1 group by 1 order by total desc limit 1;
