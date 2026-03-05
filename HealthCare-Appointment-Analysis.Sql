@@ -200,7 +200,12 @@ from healthh
 group by 1;
 
 # 39-Find the most common appointment day for diabetic patients ?
-select Appointment_dayname,count(*) as total from healthh where Diabetes = 1 group by 1 order by total desc limit 1;
+select Appointment_dayname,count(*) as total 
+from healthh
+where Diabetes = 1 
+group by 1 
+order by total desc 
+limit 1;
 
 # 40-Determine whether patients with hypertension have a higher no-show rate ?
 select No_show,count(*) as total from healthh where Hipertension = 1 group by 1 order by total desc;
