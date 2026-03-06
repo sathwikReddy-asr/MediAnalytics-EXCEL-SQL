@@ -208,7 +208,11 @@ order by total desc
 limit 1;
 
 # 40-Determine whether patients with hypertension have a higher no-show rate ?
-select No_show,count(*) as total from healthh where Hipertension = 1 group by 1 order by total desc;
+select No_show,count(*) as total 
+from healthh 
+where Hipertension = 1 
+group by 1 
+order by total desc;
 
 # 41-Find the average age of patients with a scholarship who did not show up ?
 select round(avg(Age),0) as average_age from healthh where Scholarship = 1 and No_show = 'No';
