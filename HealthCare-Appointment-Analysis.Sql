@@ -215,7 +215,9 @@ group by 1
 order by total desc;
 
 # 41-Find the average age of patients with a scholarship who did not show up ?
-select round(avg(Age),0) as average_age from healthh where Scholarship = 1 and No_show = 'No';
+select round(avg(Age),0) as average_age 
+from healthh 
+where Scholarship = 1 and No_show = 'No';
 
 # 42-Display appointment counts grouped by both Gender and Appointment_Quarter ?
 select Gender,Appointment_Quarter,count(*) as total_appointments from healthh group by 1,2;
