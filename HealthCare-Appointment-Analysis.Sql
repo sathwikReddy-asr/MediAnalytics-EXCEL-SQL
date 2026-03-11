@@ -220,7 +220,9 @@ from healthh
 where Scholarship = 1 and No_show = 'No';
 
 # 42-Display appointment counts grouped by both Gender and Appointment_Quarter ?
-select Gender,Appointment_Quarter,count(*) as total_appointments from healthh group by 1,2;
+select Gender,Appointment_Quarter,count(*) as total_appointments 
+from healthh 
+group by 1,2;
 
 # 43-Find how many appointments were scheduled on the same day ?
 select count(*) as total_appointments from healthh where Sche_Appo_daydiff = 0;
