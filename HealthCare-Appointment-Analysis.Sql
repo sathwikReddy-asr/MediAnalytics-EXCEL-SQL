@@ -225,7 +225,9 @@ from healthh
 group by 1,2;
 
 # 43-Find how many appointments were scheduled on the same day ?
-select count(*) as total_appointments from healthh where Sche_Appo_daydiff = 0;
+select count(*) as total_appointments 
+from healthh 
+where Sche_Appo_daydiff = 0;
 
 # 44-Calculate the average appointment time per weekday (group by Appointment_dayname) ?
 select Appointment_dayname,avg(Appointment_time) as average_appointment_time from healthh group by 1;
