@@ -230,7 +230,9 @@ from healthh
 where Sche_Appo_daydiff = 0;
 
 # 44-Calculate the average appointment time per weekday (group by Appointment_dayname) ?
-select Appointment_dayname,avg(Appointment_time) as average_appointment_time from healthh group by 1;
+select Appointment_dayname,avg(Appointment_time) as average_appointment_time 
+from healthh 
+group by 1;
 
 # 45-List top 5 patients with the largest scheduling gaps (Sche_Appo_daydiff highest) ?
 select * from healthh order by Sche_Appo_daydiff desc limit 5;s
