@@ -235,4 +235,7 @@ from healthh
 group by 1;
 
 # 45-List top 5 patients with the largest scheduling gaps (Sche_Appo_daydiff highest) ?
-select * from healthh order by Sche_Appo_daydiff desc limit 5;s
+select * 
+from healthh 
+order by Sche_Appo_daydiff desc 
+limit 5;
