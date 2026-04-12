@@ -4,7 +4,7 @@
 
 # 1-Retrieve all records from the dataset ?
 select * 
-from healthh;
+from healthh;                                                                               --selecting all columns from healthh
 
 # 2-Display distinct values from the Gender column ?
 select distinct(Gender) 
