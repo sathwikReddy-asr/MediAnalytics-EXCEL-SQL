@@ -7,7 +7,7 @@ select *
 from healthh;                                                                               --selecting all recordss from healthh table
 
 # 2-Display distinct values from the Gender column ?
-select distinct(Gender) 
+select distinct(Gender)                                                                      --selecting all types of gender in table
 from healthh;
 
 # 3-Count the total number of appointments ?
