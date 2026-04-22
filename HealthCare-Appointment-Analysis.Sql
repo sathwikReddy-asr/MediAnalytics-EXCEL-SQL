@@ -11,11 +11,11 @@ select distinct(Gender)                                                         
 from healthh;
 
 # 3-Count the total number of appointments ?
-select count(Appointment_Id) as total_count                                                  --Getting total count of appointments
+select count(Appointment_Id) as total_count                                                  --counting appointments
 from healthh;
 
 # 4-Find the total number of patients ?
-select count(Patient_Id) as total_count 
+select count(Patient_Id) as total_count                                                     --
 from healthh;
 
 # 5-Show the number of patients who received scholarships ?
