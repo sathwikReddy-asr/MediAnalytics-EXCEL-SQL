@@ -20,7 +20,7 @@ from healthh;
 
 # 5-Show the number of patients who received scholarships ?
 select * 
-from healthh 
+from healthh                                                                                 --Patients who recieved scholarships
 where Scholarship = 1;
 
 # 6-Count how many patients have diabetes ?
