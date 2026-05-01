@@ -24,7 +24,7 @@ from healthh                                                                    
 where Scholarship = 1;
 
 # 6-Count how many patients have diabetes ?
-select count(*) as total_count                                                               --
+select count(*) as total_count                                                               --Counting diabetic patients 
 from healthh where Diabetes = 1;
 
 # 7-Find the average age of patients ?
