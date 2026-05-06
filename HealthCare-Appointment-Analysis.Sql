@@ -28,7 +28,7 @@ select count(*) as total_count                                                  
 from healthh where Diabetes = 1;
 
 # 7-Find the average age of patients ?
-select avg(age) as average_age                                                               --
+select avg(age) as average_age                                                               --Average age of patients
 from healthh;
 
 # 8-Display the youngest and oldest patient ages ?
