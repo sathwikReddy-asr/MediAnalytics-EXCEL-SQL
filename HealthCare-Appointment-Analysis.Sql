@@ -32,7 +32,7 @@ select avg(age) as average_age                                                  
 from healthh;
 
 # 8-Display the youngest and oldest patient ages ?
-select min(age) as youngest, max(age) as oldest 
+select min(age) as youngest, max(age) as oldest                                             --
 from healthh;
 
 # 9-Retrieve all patients whose age is above 60 ?
