@@ -37,7 +37,7 @@ from healthh;
 
 # 9-Retrieve all patients whose age is above 60 ?
 select * 
-from healthh                                                                                --
+from healthh                                                                                --Patients above 60
 where age > 60;
 
 # 10-Show how many patients received SMS reminders ?
