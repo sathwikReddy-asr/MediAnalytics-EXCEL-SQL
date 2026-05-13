@@ -42,7 +42,7 @@ where age > 60;
 
 # 10-Show how many patients received SMS reminders ?
 select * 
-from healthh                                                                                --
+from healthh                                                                                --Patients recieved sms
 where SMS_received = 1;
 
 # 11-List all appointments where No_show = 'Yes' ?
