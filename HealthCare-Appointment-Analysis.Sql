@@ -47,7 +47,7 @@ where SMS_received = 1;
 
 # 11-List all appointments where No_show = 'Yes' ?
 select * 
-from healthh 
+from healthh                                                                                --
 where No_show = 'Yes';
 
 # 12-Count total appointments by gender ?
