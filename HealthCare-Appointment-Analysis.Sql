@@ -47,11 +47,11 @@ where SMS_received = 1;
 
 # 11-List all appointments where No_show = 'Yes' ?
 select * 
-from healthh                                                                                --Patients who missed
+from healthh                                                                                --Patients who missed appointments
 where No_show = 'Yes';
 
 # 12-Count total appointments by gender ?
-select Gender,count(*) as total_count 
+select Gender,count(*) as total_count  
 from healthh 
 group by 1;
 
