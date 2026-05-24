@@ -62,7 +62,7 @@ group by 1;
 
 # 14-Find how many appointments were scheduled in each quarter ?
 select Scheduled_Quarter,count(*) as scheduled_by_quarter 
-from healthh 
+from healthh                                                                               --
 group by 1;
 
 # 15-Get the count of appointments made in each month (Appointment_month_name) ?
