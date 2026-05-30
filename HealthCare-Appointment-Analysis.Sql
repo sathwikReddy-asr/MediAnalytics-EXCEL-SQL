@@ -67,7 +67,7 @@ group by 1;
 
 # 15-Get the count of appointments made in each month (Appointment_month_name) ?
 select Appointment_month_name,count(*) as appointments_by_months 
-from healthh                                                                                --
+from healthh                                                                                --Appointments by month 
 group by 1;
 
 # 16-Find the number of missed appointments (No_show = 'Yes') by gender ?
