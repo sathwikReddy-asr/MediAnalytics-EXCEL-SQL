@@ -82,7 +82,8 @@ from healthh;
 
 # 18-Count the number of appointments by day of the week ?
 select Appointment_dayname,count(*) as total_appointments                                    --
-from healthh group by 1;
+from healthh 
+group by 1;
 
 # 19-Show the average age of patients who missed their appointment vs those who didn’t ?
 select No_show,avg(age) as missed 
