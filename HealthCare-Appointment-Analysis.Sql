@@ -81,7 +81,7 @@ select sum((case when No_show = 'Yes' then 1 end)*100)/count(*) as percentage   
 from healthh;
 
 # 18-Count the number of appointments by day of the week ?
-select Appointment_dayname,count(*) as total_appointments                                    --
+select Appointment_dayname,count(*) as total_appointments                                    --Appointments by day
 from healthh 
 group by 1;
 
