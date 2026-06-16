@@ -87,7 +87,8 @@ group by 1;
 
 # 19-Show the average age of patients who missed their appointment vs those who didn’t ?
 select No_show,avg(age) as missed 
-from healthh group by 1;
+from healthh 
+group by 1;
 
 # 20-Find which month had the highest number of missed appointments ?
 select Appointment_month_name,count(*) as total_missed 
