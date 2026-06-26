@@ -4,14 +4,14 @@
 
 # 1-Retrieve all records from the dataset ?
 select * 
-from healthh;                                                                                  --selecting all recordss from healthh table
+from healthh;                                                                                 --selecting all recordss from healthh table
 
 # 2-Display distinct values from the Gender column ?
 select distinct(Gender)                                                                       --selecting all types of gender in table
 from healthh;
 
 # 3-Count the total number of appointments ?
-select count(Appointment_Id) as total_count                                                  --counting appointments
+select count(Appointment_Id) as total_count                                                   --counting appointments
 from healthh;
 
 # 4-Find the total number of patients ?
