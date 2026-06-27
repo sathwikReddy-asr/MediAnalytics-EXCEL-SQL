@@ -25,7 +25,8 @@ where Scholarship = 1;
 
 # 6-Count how many patients have diabetes ?
 select count(*) as total_count                                                               --Counting diabetic patients 
-from healthh where Diabetes = 1;
+from healthh 
+where Diabetes = 1;
 
 # 7-Find the average age of patients ?
 select avg(age) as average_age                                                               --Average age of patients
