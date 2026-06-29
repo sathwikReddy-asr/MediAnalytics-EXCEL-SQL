@@ -15,7 +15,7 @@ select count(Appointment_Id) as total_count                                     
 from healthh;
 
 # 4-Find the total number of patients ?
-select count(Patient_Id) as total_count                                                     --counting patients
+select count(Patient_Id) as total_count                                                       --counting patients
 from healthh;
 
 # 5-Show the number of patients who received scholarships ?
