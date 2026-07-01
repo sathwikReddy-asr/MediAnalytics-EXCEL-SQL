@@ -58,7 +58,7 @@ group by 1;
 
 # 13-Count total appointments per year ?
 select Appointment_year,count(*) as total_appointments 
-from healthh                                                                              --Appointments by year
+from healthh                                                                                --Appointments by year
 group by 1;
 
 # 14-Find how many appointments were scheduled in each quarter ?
