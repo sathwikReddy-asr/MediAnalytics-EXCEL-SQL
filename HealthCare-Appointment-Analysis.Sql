@@ -95,7 +95,7 @@ group by 1;
 select Appointment_month_name,count(*) as total_missed 
 from healthh 
 where No_show = 'Yes' 
-group by 1                                                                                        --
+group by 1                                                                                        --Highest missed appointments month
 order by total_missed desc 
 limit 1;
 
