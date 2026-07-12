@@ -53,7 +53,7 @@ where No_show = 'Yes';
 
 # 12-Count total appointments by gender ?
 select Gender,count(*) as total_count  
-from healthh                                                                               --Appointments by gender
+from healthh                                                                                 --Appointments by gender
 group by 1;
 
 # 13-Count total appointments per year ?
