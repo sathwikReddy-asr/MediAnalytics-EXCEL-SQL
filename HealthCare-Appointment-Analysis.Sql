@@ -102,7 +102,7 @@ limit 1;
 # 21-Find the most common appointment day of the week ?
 select Appointment_dayname,count(*) as most_common_day 
 from healthh 
-group by 1                                                                                    --
+group by 1                                                                                    --Most common appointment day of week
 order by most_common_day desc 
 limit 1;
 
