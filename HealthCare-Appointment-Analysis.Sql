@@ -78,7 +78,7 @@ where No_show = 'Yes'
 group by 1;
 
 # 17-Calculate the percentage of patients who missed their appointments ?
-select sum((case when No_show = 'Yes' then 1 end)*100)/count(*) as percentage                 --Percentage of missed appointments
+select sum((case when No_show = 'Yes' then 1 end)*100)/count(*) as percentage                   --Percentage of missed appointments
 from healthh;
 
 # 18-Count the number of appointments by day of the week ?
