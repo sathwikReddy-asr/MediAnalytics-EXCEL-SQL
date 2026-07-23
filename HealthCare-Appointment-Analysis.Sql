@@ -108,7 +108,7 @@ limit 1;
 
 # 22-Determine how many patients suffer from both Diabetes and Hypertension ?
 select * 
-from healthh                                                                                 --Patients with both diabetes and 
+from healthh                                                                                 --Patients with both diabetes and hypertension
 where Diabetes = 1 and Hipertension = 1; 
 
 # 23-Count how many patients have both Alcoholism and Handcap ?
