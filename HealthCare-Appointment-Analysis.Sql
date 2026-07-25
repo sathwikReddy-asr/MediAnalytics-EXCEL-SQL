@@ -113,7 +113,7 @@ where Diabetes = 1 and Hipertension = 1;
 
 # 23-Count how many patients have both Alcoholism and Handcap ?
 select count(*) as total_count 
-from healthh                                                                                  --
+from healthh                                                                                  --count of patients having both
 where Alcoholism = 1 and Handcap = 1;
 
 # 24-Find the total number of patients who are both diabetic and did not show up ?
