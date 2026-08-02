@@ -118,7 +118,7 @@ where Alcoholism = 1 and Handcap = 1;
 
 # 24-Find the total number of patients who are both diabetic and did not show up ?
 select count(*) as total_count 
-from healthh                                                                                  --
+from healthh                                                                                  --count of patients 
 where Diabetes = 1 and No_show ='Yes';
 
 # 25-Calculate the average scheduled–appointment day difference for missed vs attended appointments ?
