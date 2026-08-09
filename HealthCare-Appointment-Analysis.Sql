@@ -123,7 +123,7 @@ where Diabetes = 1 and No_show ='Yes';
 
 # 25-Calculate the average scheduled–appointment day difference for missed vs attended appointments ?
 select No_show,avg(Sche_Appo_daydiff) as average_day_difference 
-from healthh 
+from healthh                                                                                  --
 group by 1;
 
 # 26-Get the number of appointments per quarter ?
