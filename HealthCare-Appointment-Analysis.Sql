@@ -73,7 +73,7 @@ group by 1;
 
 # 16-Find the number of missed appointments (No_show = 'Yes') by gender ?
 select Gender,count(*) as total_count 
-from healthh                                                                                  --Gender wise missed appointments
+from healthh                                                                                    --Gender wise missed appointments
 where No_show = 'Yes' 
 group by 1;
 
