@@ -128,7 +128,7 @@ group by 1;
 
 # 26-Get the number of appointments per quarter ?
 select Appointment_Quarter,count(*) as appointment_by_quarter 
-from healthh                                                                                 --
+from healthh                                                                                 --Appointments by quarter
 group by 1;
 
 # 27-Identify the year with the highest number of total appointments ?
