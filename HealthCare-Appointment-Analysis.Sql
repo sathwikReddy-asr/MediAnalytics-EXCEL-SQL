@@ -134,7 +134,7 @@ group by 1;
 # 27-Identify the year with the highest number of total appointments ?
 select Appointment_year,count(*) as total_appointments 
 from healthh 
-group by 1 
+group by 1                                                                                  --
 order by total_appointments desc 
 limit 1;
 
