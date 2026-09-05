@@ -140,7 +140,7 @@ limit 1;
 
 # 28-Find the average number of SMS reminders received per year ?
 select Scheduled_year,round(avg(SMS_received),2) as average 
-from healthh
+from healthh                                                                                --
 group by 1;
 
 # 29-Show total appointments where Scholarship = 1 grouped by gender ?
